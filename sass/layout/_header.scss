@@ -1,0 +1,39 @@
+.header {
+    box-sizing: border-box;
+    height: 95px;
+    padding: 29px 0 33px 0;
+    background: $color-background-dark;
+    border-bottom: 6px solid $background-header-border;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.navigation {
+    display: flex;
+    margin: 0;
+    padding: 0 40px 0 0;
+    .navigation-link {
+        @include font($size:1.2rem, $weight:700, $height:1.44rem, $transform:uppercase);
+        color: $color-font-header;
+        list-style: none;
+        &:nth-child(n + 2)::before {
+            content: "\2022";
+            padding: 0 15px;
+            color: $color-font-header;
+        }
+
+        a {
+            color: $color-font-header;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    .active {
+        color: $color-font-nav-active;
+    }
+}
