@@ -1,0 +1,21 @@
+.slider-wrapper {
+    position: relative;
+}
+
+#previous, #next {
+    position: absolute;
+    z-index: 10000;
+    top: 283px;
+    &:hover {
+        @extend %transform;
+        @extend %transition;
+    }
+}
+
+#previous {
+    left: 40px;
+}
+
+#next {
+    right: 40px;
+}

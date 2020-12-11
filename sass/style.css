@@ -23,12 +23,28 @@
   font-weight: 300;
   font-style: normal;
 }
-.navigation-link:hover {
-  transition: all 0.3s ease-in-out;
+.navigation-link:hover, #previous:hover, #next:hover {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .slide {
-  transition: all 0.5s;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+#previous:hover, #next:hover {
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 html {
@@ -79,6 +95,23 @@ h3 {
   font-weight: 900;
   line-height: 1.8rem;
   text-transform: capitalize;
+}
+
+.slider-wrapper {
+  position: relative;
+}
+
+#previous, #next {
+  position: absolute;
+  z-index: 10000;
+  top: 283px;
+}
+#previous {
+  left: 40px;
+}
+
+#next {
+  right: 40px;
 }
 
 .wrapper {
@@ -143,17 +176,18 @@ h3 {
 .slider-container {
   position: relative;
   display: block;
+  width: 1020px;
   height: 594px;
   overflow: hidden;
-  border: 1px solid black;
 }
 
 .slide {
   position: absolute;
   left: 0;
   display: block;
-  z-index: 100;
-  height: 100%;
+  z-index: 9999;
+  width: 1020px;
+  height: 594px;
 }
 .slide img {
   width: 100%;
@@ -162,17 +196,17 @@ h3 {
 
 .right {
   left: 100%;
-  z-index: 0;
+  z-index: 1;
 }
 
 .right-prev {
   left: 100%;
-  z-index: -200;
+  z-index: -100;
 }
 
 .left {
   left: -100%;
-  z-index: -100;
+  z-index: -9999;
 }
 
 /*# sourceMappingURL=style.css.map */
