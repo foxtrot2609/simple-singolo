@@ -5,11 +5,14 @@ html {
 body {
     margin: 0;
     font-size: 1.6rem;
-    @extend %fontfamily;
+    font-family: "Lato", Verdana, sans-serif;
 }
 
 a {
     text-decoration: none;
+    color: inherit;
+    text-decoration-color: inherit;
+
 }
 
 h1 {
@@ -19,7 +22,7 @@ h1 {
     a {
         color: $color-font-header;
     }
-    span::before {
+    .star::before {
         content: "*";
         padding-left: 1px;
         color: $color-font-nav-active;

@@ -16,24 +16,26 @@
     display: flex;
     margin: 0;
     padding: 0 40px 0 0;
-    .navigation-link {
-        @include font($size:1.2rem, $weight:700, $height:1.44rem, $transform:uppercase);
-        color: $color-font-header;
-        list-style: none;
-        &:nth-child(n + 2)::before {
-            content: "\2022";
-            padding: 0 15px;
-            color: $color-font-header;
-        }
+}
 
-        a {
-            color: $color-font-header;
-            &:hover {
-                cursor: pointer;
-            }
-        }
-    }
-    .active {
+.navigation-link {
+    display: inline-block;
+    @include font($size:1.2rem, $weight:700, $height:1.44rem, $transform:uppercase);
+    color: $color-font-header;
+    list-style: none;
+    &:nth-child(n + 2)::before {
+        content: "\2022";
+        padding: 0 15px;
+        color: $color-font-header;
+    }  
+    &:hover {
         color: $color-font-nav-active;
+        @extend %transition;
+        cursor: pointer;
     }
 }
+
+.active {
+    color: $color-font-nav-active;
+}
+
