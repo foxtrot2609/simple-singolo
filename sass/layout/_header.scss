@@ -25,7 +25,10 @@
     list-style: none;
     &:nth-child(n + 2)::before {
         content: "\2022";
-        padding: 0 15px;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 11px;
+        font-size: .5rem;
         color: $color-font-header;
     }  
     &:hover {
