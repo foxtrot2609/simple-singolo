@@ -19,9 +19,8 @@
     position: absolute;
     left: 0;
     display: block;
-    z-index: 9999;
+    z-index: 1000;
     width: $content-width;
-    height: 594px;
     @extend %transition-slides;
     img {
         width: 100%;
@@ -31,15 +30,15 @@
 
 .right {
     left: 100%;
-    z-index: 1;
+    z-index: 200;
 }
 
 .right-prev {
     left: 100%;
-    z-index: -100;
+    z-index: 100;
 }
 
 .left {
     left: -100%;
-    z-index: -9999;
+    z-index: 1;
 }

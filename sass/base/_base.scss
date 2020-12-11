@@ -5,7 +5,7 @@ html {
 body {
     margin: 0;
     font-size: 1.6rem;
-    font-family: "Lato", Verdana, sans-serif;
+    font-family: 'Lato', Verdana, sans-serif;
 }
 
 a {
@@ -30,9 +30,15 @@ h1 {
 }
 
 h2 {
+    margin: 0;
     @include font($size:3rem, $weight:900, $height:3.6rem, $transform:capitalize);
 }
 
 h3 {
+    margin: 0;
     @include font($size:1.8rem, $weight:900, $height:1.8rem, $transform:capitalize);
+}
+
+P {
+    margin: 0;
 }
