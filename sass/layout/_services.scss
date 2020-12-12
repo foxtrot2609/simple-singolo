@@ -1,18 +1,60 @@
 .services {
     box-sizing: border-box;
-    height: 500px;
     background: $color-background-bright;
     border-bottom: 6px solid $color-font-header;
 }
 
 .services-wrapper {
-    padding: 59px 0 46px 0;
-    & > * {
+    padding-top: 59px;
+    padding-bottom: 36px;
+    & > h2 {
         padding: 0 40px;
     }
     & > p {
-        padding-top: 18px;
-        padding-bottom: 60px;
+        padding: 18px 40px 50px;
+        @include font($size:1.8rem, $weight:300, $height:3rem);
+        text-overflow: ellipsis;
+    }
+    & > .services-list {
+        padding: 0 30px;        
+    }
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 104px;
+    margin: 10px 10px;
+}
+
+.service-ico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 3px solid $color-font-heading;
+}
+
+.service-text {
+    & > h3 {
+        padding-bottom: 7px;
+    }
+    & > p {
+        width: 220px;
+        height: 75px;
+        @include font($size:1.2rem, $weight:400, $height:2.2rem);
+        text-align: justify;
+        text-overflow: ellipsis;
     }
 }
 

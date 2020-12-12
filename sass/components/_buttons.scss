@@ -9,6 +9,7 @@
     &:hover {
         @extend %transform;
         @extend %transition;
+        cursor: pointer;
     }
 }
 

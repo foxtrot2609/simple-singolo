@@ -5,6 +5,7 @@ html {
 body {
     margin: 0;
     font-size: 1.6rem;
+    color: $color-font-main;
     font-family: 'Lato', Verdana, sans-serif;
 }
 
@@ -31,11 +32,13 @@ h1 {
 
 h2 {
     margin: 0;
+    color: $color-font-heading;
     @include font($size:3rem, $weight:900, $height:3.6rem, $transform:capitalize);
 }
 
 h3 {
     margin: 0;
+    color: $color-font-heading;
     @include font($size:1.8rem, $weight:900, $height:1.8rem, $transform:capitalize);
 }
 

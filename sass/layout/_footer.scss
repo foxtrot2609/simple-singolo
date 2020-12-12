@@ -1,0 +1,37 @@
+.footer {
+    background: $color-background-dark;
+    height: 76px;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 40px;
+
+    &>p {
+        @include font($size:1.3rem, $weight:900, $height:1.8rem);
+    }
+}
+
+.footer-social {
+    display: flex;
+
+    &>.social-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        box-sizing: border-box;
+        border-radius: 50%;
+        border: 2px solid $color-font-heading;
+        margin-left: 8px;
+
+        &:hover {
+            border: 2px solid $color-font-header;
+            @extend %transition;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.portfolio {
+    box-sizing: border-box;
+    background: $color-background-dark;
+    border-bottom: 6px solid $background-dark-border;
+    height: 860px;
+}
+
+.portfolio-wrapper {
+    padding-top: 59px;
+    padding-bottom: 58px;
+    & > h2 {
+        padding: 0 40px 14px;
+    }
+    & > p {
+        padding: 0 40px 10px;
+        @include font($size:1.8rem, $weight:300, $height:3rem);
+        text-overflow: ellipsis;    
+    }
+    & > .portfolio-buttons {
+        padding: 0 40px 8px;
+    }
+    & > .portfolio-pictures {
+        padding: 0 30px;
+    }
+}
+
