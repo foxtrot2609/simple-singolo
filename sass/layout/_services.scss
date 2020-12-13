@@ -2,21 +2,54 @@
     box-sizing: border-box;
     background: $color-background-bright;
     border-bottom: 6px solid $color-font-header;
+
+    @include media-tablet {
+        border-bottom: none;
+    }
+
+    @include media-mobile {
+        border-bottom: none;
+    }
 }
 
 .services-wrapper {
     padding-top: 59px;
     padding-bottom: 36px;
-    & > h2 {
-        padding: 0 40px;
+
+    @include media-tablet {
+        padding-top: 40px;
+        padding-bottom: 64px;
     }
-    & > p {
+
+    @include media-mobile {
+        padding-top: 25px;
+        padding-bottom: 5px;
+    }
+
+    &>h2 {
+        padding: 0 40px;
+
+        @include media-mobile {
+            padding: 0 30px;
+        }
+    }
+
+    &>p {
         padding: 18px 40px 50px;
         @include font($size:1.8rem, $weight:300, $height:3rem);
         text-overflow: ellipsis;
+
+        @include media-mobile {
+            padding: 18px 30px 15px;
+        }
     }
-    & > .services-list {
-        padding: 0 30px;        
+
+    &>.services-list {
+        padding: 0 30px;
+
+        @include media-mobile {
+            padding: 0 20px;
+        }
     }
 }
 
@@ -24,6 +57,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @include media-tablet {
+        justify-content: space-around;
+    }
+
+    @include media-tablet {
+        justify-content: stretch;
+    }
 }
 
 .service {
@@ -46,10 +87,11 @@
 }
 
 .service-text {
-    & > h3 {
+    &>h3 {
         padding-bottom: 7px;
     }
-    & > p {
+
+    &>p {
         width: 220px;
         height: 75px;
         @include font($size:1.2rem, $weight:400, $height:2.2rem);
@@ -57,6 +99,3 @@
         text-overflow: ellipsis;
     }
 }
-
-
-

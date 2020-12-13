@@ -1,5 +1,9 @@
 .header {
+    margin-top: -95px;
+    position: fixed;
     box-sizing: border-box;
+    width: 100%;
+    z-index: 10000;
     height: 95px;
     padding: 29px 0 33px 0;
     background: $color-background-dark;
