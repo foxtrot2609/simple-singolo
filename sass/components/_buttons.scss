@@ -1,11 +1,15 @@
+// slider buttons
+
 .slider-wrapper {
     position: relative;
 }
 
-#previous, #next {
+#previous,
+#next {
     position: absolute;
     z-index: 9999;
     top: 283px;
+
     &:hover {
         @extend %transform;
         @extend %transition;
@@ -19,4 +23,30 @@
 
 #next {
     right: 40px;
+}
+
+// portfolio buttons
+
+.portfolio-btn {
+    padding: 2px 5px;
+    margin-right: 7px;
+    @include font($size:1.2rem, $weight:400, $height:1.2rem, $transform:capitalize);
+    border: 1px solid $color-font-main;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    &:hover {
+        color: $color-font-portfolio-active;
+        border-color: $collor-border-portfolio-active;
+        @extend %transition;
+        cursor: pointer;
+    }
+}
+
+.active-btn {
+    color: $color-font-portfolio-active;
+    border-color: $collor-border-portfolio-active;
+    &:hover {
+        cursor: default;
+    }
 }

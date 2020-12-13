@@ -15,11 +15,11 @@
 .navigation {
     display: flex;
     margin: 0;
-    padding: 0 40px 0 0;
+    padding-right: 40px;        
 }
 
 .navigation-link {
-    display: inline-block;
+    display: flex;
     @include font($size:1.2rem, $weight:700, $height:1.44rem, $transform:uppercase);
     color: $color-font-header;
     list-style: none;
@@ -34,11 +34,13 @@
     &:hover {
         color: $color-font-nav-active;
         @extend %transition;
-        cursor: pointer;
     }
 }
 
 .active {
     color: $color-font-nav-active;
+    &>a {
+        cursor: default;
+    }
 }
 
