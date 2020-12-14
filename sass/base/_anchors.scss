@@ -1,0 +1,11 @@
+.anchor {
+    content: " ";
+    display: block;
+    position: relative;
+    top: -95px;
+    visibility: hidden;
+
+    @include media-mobile {
+        top: -71px;
+    }
+}

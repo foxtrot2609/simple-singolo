@@ -9,12 +9,12 @@
 </head>
 
 <body>
-    <header class="header" id="header">
+    <header class="header">
         <div class="wrapper header-wrapper">
             <h1><a href="#" alt="Simple-Singolo">singolo</a><span class="star"></span></h1>
             <nav>
                 <ul class="navigation">
-                    <li class="navigation-link active"><a href="#header" alt="home">home</a></li>
+                    <li class="navigation-link active"><a href="#home" alt="home">home</a></li>
                     <li class="navigation-link"><a href="#services" alt="services">services</a></li>
                     <li class="navigation-link"><a href="#portfolio" alt="portfolio">portfolio</a></li>
                     <li class="navigation-link"><a href="#" alt="about">about</a></li>
@@ -24,6 +24,7 @@
         </div>
     </header>
     <aside class="slider">
+        <span class="anchor" id="home"></span>
         <div class="wrapper slider-wrapper">
             <div class="slider-container">
                 <div class="slide left"><img src="images/slides/Slide2.png" alt="slide 2"></div>
@@ -35,7 +36,8 @@
             <div id="next"><img src="images/buttons/arrow-right.png" alt="next"></div>
         </div>
     </aside>
-    <section class="services" id="services">
+    <section class="services">
+        <span class="anchor" id="services"></span>
         <div class="wrapper services-wrapper">
             <h2>our services</h2>
             <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi
@@ -94,7 +96,8 @@
             </div>
         </div>
     </section>
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio">
+        <span class="anchor" id="portfolio"></span>
         <div class="wrapper portfolio-wrapper">
             <h2>portfolio</h2>
             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
@@ -135,7 +138,7 @@
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="script/slider.js"></script>
 </body>
 
 </html>

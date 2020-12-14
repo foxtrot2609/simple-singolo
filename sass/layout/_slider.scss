@@ -14,11 +14,13 @@
     display: flex;
     overflow: hidden;
     width: $content-width;
+
     &::before {
         display: block;
         content: "";
         padding-top: 58.23%;
     }
+
     @include media-tablet {
         width: $tablet-width;
     }

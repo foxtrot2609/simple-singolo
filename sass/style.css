@@ -51,6 +51,7 @@
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -115,6 +116,19 @@ P {
 
 ul {
   padding-inline-start: 0;
+}
+
+.anchor {
+  content: " ";
+  display: block;
+  position: relative;
+  top: -95px;
+  visibility: hidden;
+}
+@media (max-width: 375px) {
+  .anchor {
+    top: -71px;
+  }
 }
 
 .slider-wrapper {
