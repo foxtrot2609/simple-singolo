@@ -3,6 +3,10 @@
     box-sizing: border-box;
     background: $color-background-slider;
     border-bottom: 6px solid $background-slider-border;
+
+    @include media-mobile {
+        margin-top: 71px;
+    }
 }
 
 .slider-container {

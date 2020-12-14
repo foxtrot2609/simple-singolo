@@ -37,6 +37,10 @@
         border: 2px solid $color-font-heading;
         margin-left: 8px;
 
+        @include media-mobile {
+            margin: 0 4px;
+        }
+
         &:hover {
             border-color: $color-font-header;
             @extend %transition;

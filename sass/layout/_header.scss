@@ -8,18 +8,37 @@
     padding: 29px 0 33px 0;
     background: $color-background-dark;
     border-bottom: 6px solid $background-dark-border;
+
+    @include media-mobile {
+        margin-top: -71px;
+        padding: 23px 0 23px 0;
+        height: 71px;
+        border-bottom: none;
+    }
 }
 
 .header-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+
+    @include media-tablet {
+        align-items: center;
+    }
+
+    @include media-mobile {
+        justify-content: center;
+    }
 }
 
 .navigation {
     display: flex;
     margin: 0;
-    padding-right: 40px;        
+    padding-right: 40px;
+
+    @include media-mobile {
+        display: none;
+    }
 }
 
 .navigation-link {
@@ -27,6 +46,7 @@
     @include font($size:1.2rem, $weight:700, $height:1.44rem, $transform:uppercase);
     color: $color-font-header;
     list-style: none;
+
     &:nth-child(n + 2)::before {
         content: "\2022";
         display: inline-block;
@@ -34,7 +54,8 @@
         padding: 0 11px;
         font-size: .5rem;
         color: $color-font-header;
-    }  
+    }
+
     &:hover {
         color: $color-font-nav-active;
         @extend %transition;
@@ -43,8 +64,8 @@
 
 .active {
     color: $color-font-nav-active;
+
     &>a {
         cursor: default;
     }
 }
-

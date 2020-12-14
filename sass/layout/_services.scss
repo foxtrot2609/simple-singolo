@@ -62,7 +62,7 @@
         justify-content: space-around;
     }
 
-    @include media-tablet {
+    @include media-mobile {
         justify-content: stretch;
     }
 }

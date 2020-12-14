@@ -9,20 +9,60 @@
     position: absolute;
     z-index: 9999;
     top: 283px;
+    width: 16px;
+    height: 27px;
+
+    @include media-tablet {
+        top: 212px;
+    }
+
+    @include media-mobile {
+        top: 98px;
+        width: 14px;
+        height: 25px;
+    }
 
     &:hover {
         @extend %transform;
         @extend %transition;
         cursor: pointer;
+
+        @include media-tablet {
+            transition: none;
+            transform: none;
+        }
+
+        @include media-mobile {
+            transition: none;
+            transform: none;
+        }
     }
+
+
 }
 
 #previous {
     left: 40px;
+
+    @include media-tablet {
+        left: 27px;
+    }
+
+    @include media-mobile {
+        left: 10px;
+    }
 }
 
 #next {
     right: 40px;
+
+    @include media-tablet {
+        right: 27px;
+    }
+
+    @include media-mobile {
+        right: 10px;
+    }
 }
 
 // portfolio buttons
@@ -46,6 +86,7 @@
 .active-btn {
     color: $color-font-portfolio-active;
     border-color: $collor-border-portfolio-active;
+
     &:hover {
         cursor: default;
     }
