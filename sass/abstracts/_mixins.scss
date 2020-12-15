@@ -6,6 +6,10 @@
     text-transform: $transform;
 }
 
+@mixin media-content {
+    @media (max-width: $content-width) { @content; }
+}
+
 @mixin media-tablet {
     @media (max-width: $tablet-width) { @content; }
 }

@@ -8,16 +8,11 @@
 #next {
     position: absolute;
     z-index: 9999;
-    top: 283px;
+    top: 45%;
     width: 16px;
     height: 27px;
 
-    @include media-tablet {
-        top: 212px;
-    }
-
     @include media-mobile {
-        top: 98px;
         width: 14px;
         height: 25px;
     }
