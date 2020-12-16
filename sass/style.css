@@ -611,7 +611,7 @@ ul {
 }
 @media (max-width: 374px) {
   .portfolio-pictures > .portfolio-img {
-    flex: 0 1 46.3%;
+    flex: 0 1 46%;
   }
 }
 
