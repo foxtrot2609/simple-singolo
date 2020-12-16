@@ -34,37 +34,28 @@
 .slide {
     position: absolute;
     left: 0;
-    display: flex;
+    display: block;
     z-index: 1000;
-    max-width: $content-width;
+    width: $content-width;
     height: 100%;
     @extend %transition-slides;
 
-    @include media-tablet {
-        width: $tablet-width;
-    }
-
-    @include media-mobile {
-        width: $mobile-width;
+    @include media-content {
+        width: 100vw;
+        height: 58.23vw;
     }
 
     .slide1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         background: $color-slide1;
     }
 
     .slide2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         background: $color-slide2;
     }
 
     img {
-        width: 30%;
-        height: 30%;
+        width: 100%;
+        height: 100%;
     }
 }
 
