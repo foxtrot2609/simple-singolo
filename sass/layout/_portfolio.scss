@@ -82,7 +82,7 @@
 
     &>.portfolio-img {
         margin: 10px;
-        flex: 0 1 22.9%;
+        flex: 0 1 22.8%;
 
         &::before {
             content: "";
@@ -100,17 +100,17 @@
         }
 
         @include media-content {
-            flex: 0 1 30.5%;
+            flex: 0 1 30.4%;
         }
 
         @include media-tablet {
             margin: 5px;
-            flex: 0 1 46.9%;
+            flex: 0 1 46.7%;
         }
 
         @include media-mobile {
             margin: 5px;
-            flex: 0 1 46.6%;
+            flex: 0 1 46.4%;
         }
     }
 }

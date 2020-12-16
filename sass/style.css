@@ -609,7 +609,7 @@ ul {
 }
 .portfolio-pictures > .portfolio-img {
   margin: 10px;
-  flex: 0 1 22.9%;
+  flex: 0 1 22.8%;
 }
 .portfolio-pictures > .portfolio-img::before {
   content: "";
@@ -625,19 +625,19 @@ ul {
 }
 @media (max-width: 1019px) {
   .portfolio-pictures > .portfolio-img {
-    flex: 0 1 30.5%;
+    flex: 0 1 30.4%;
   }
 }
 @media (max-width: 767px) {
   .portfolio-pictures > .portfolio-img {
     margin: 5px;
-    flex: 0 1 46.9%;
+    flex: 0 1 46.7%;
   }
 }
 @media (max-width: 374px) {
   .portfolio-pictures > .portfolio-img {
     margin: 5px;
-    flex: 0 1 46.6%;
+    flex: 0 1 46.4%;
   }
 }
 
