@@ -12,12 +12,12 @@
     &>p {
         @include font($size:1.3rem, $weight:900, $height:1.8rem);
 
-        @include media-mobile {
+        @include media-tablet {
             display: none;
         }
     }
 
-    @include media-mobile {
+    @include media-tablet {
         justify-content: center;
     }
 }
@@ -36,7 +36,7 @@
         border: 2px solid $color-font-heading;
         margin-left: 8px;
 
-        @include media-mobile {
+        @include media-tablet {
             margin: 0 4px;
         }
 

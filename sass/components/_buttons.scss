@@ -37,11 +37,11 @@
 #previous {
     left: 40px;
 
-    @include media-tablet {
+    @include media-content {
         left: 27px;
     }
 
-    @include media-mobile {
+    @include media-tablet {
         left: 10px;
     }
 }
@@ -49,11 +49,11 @@
 #next {
     right: 40px;
 
-    @include media-tablet {
+    @include media-content {
         right: 27px;
     }
 
-    @include media-mobile {
+    @include media-tablet {
         right: 10px;
     }
 }
