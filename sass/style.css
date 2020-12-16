@@ -199,6 +199,7 @@ ul {
 
 .portfolio-btn {
   padding: 2px 5px;
+  margin-top: 7px;
   margin-right: 7px;
   font-size: 1.2rem;
   font-style: normal;
@@ -414,11 +415,6 @@ ul {
     padding: 0 30px;
   }
 }
-@media (max-width: 374px) {
-  .services-wrapper > h2 {
-    padding: 0 15px;
-  }
-}
 .services-wrapper > p {
   padding: 18px 40px 50px;
   font-size: 1.8rem;
@@ -433,18 +429,8 @@ ul {
     padding: 18px 30px 15px;
   }
 }
-@media (max-width: 374px) {
-  .services-wrapper > p {
-    padding: 18px 15px 15px;
-  }
-}
 .services-wrapper > .services-list {
   padding: 0 30px;
-}
-@media (max-width: 374px) {
-  .services-wrapper > .services-list {
-    padding: 0 10px;
-  }
 }
 
 .services-list {
@@ -484,6 +470,7 @@ ul {
 @media (max-width: 374px) {
   .service {
     justify-content: space-around;
+    width: 260px;
   }
 }
 
@@ -511,6 +498,12 @@ ul {
   text-transform: none;
   text-align: justify;
   text-overflow: ellipsis;
+}
+@media (max-width: 374px) {
+  .service-text > p {
+    width: 180px;
+    height: 75px;
+  }
 }
 
 .portfolio {
@@ -540,16 +533,11 @@ ul {
   }
 }
 .portfolio-wrapper > h2 {
-  padding: 0 40px 14px;
+  padding: 0 40px 7px;
 }
 @media (max-width: 767px) {
   .portfolio-wrapper > h2 {
-    padding: 0 30px 14px;
-  }
-}
-@media (max-width: 374px) {
-  .portfolio-wrapper > h2 {
-    padding: 0 15px 14px;
+    padding: 0 30px 7px;
   }
 }
 .portfolio-wrapper > p {
@@ -566,12 +554,9 @@ ul {
     padding: 0 30px 10px;
   }
 }
-@media (max-width: 374px) {
-  .portfolio-wrapper > p {
-    padding: 0 15px 10px;
-  }
-}
 .portfolio-wrapper > .portfolio-buttons {
+  display: flex;
+  flex-wrap: wrap;
   padding: 0 40px 8px;
 }
 @media (max-width: 1019px) {
@@ -584,22 +569,12 @@ ul {
     padding: 0 30px 20px;
   }
 }
-@media (max-width: 374px) {
-  .portfolio-wrapper > .portfolio-buttons {
-    padding: 0 15px 20px;
-  }
-}
 .portfolio-wrapper > .portfolio-pictures {
   padding: 0 30px;
 }
 @media (max-width: 1019px) {
   .portfolio-wrapper > .portfolio-pictures {
     padding: 0 25px;
-  }
-}
-@media (max-width: 374px) {
-  .portfolio-wrapper > .portfolio-pictures {
-    padding: 0 10px;
   }
 }
 
@@ -636,8 +611,7 @@ ul {
 }
 @media (max-width: 374px) {
   .portfolio-pictures > .portfolio-img {
-    margin: 5px;
-    flex: 0 1 46.4%;
+    flex: 0 1 46.3%;
   }
 }
 

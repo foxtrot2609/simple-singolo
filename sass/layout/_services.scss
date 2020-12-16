@@ -28,10 +28,6 @@
         @include media-content {
             padding: 0 30px;
         }
-
-        @include media-mobile {
-            padding: 0 15px;
-        }
     }
 
     &>p {
@@ -42,18 +38,10 @@
         @include media-content {
             padding: 18px 30px 15px;
         }
-
-        @include media-mobile {
-            padding: 18px 15px 15px;
-        }
     }
 
     &>.services-list {
         padding: 0 30px;
-
-        @include media-mobile {
-            padding: 0 10px;
-        }
     }
 }
 
@@ -89,6 +77,7 @@
 
     @include media-mobile {
         justify-content: space-around;
+        width: 260px;
     }
 }
 
@@ -114,5 +103,10 @@
         @include font($size:1.2rem, $weight:400, $height:2.2rem);
         text-align: justify;
         text-overflow: ellipsis;
+
+        @include media-mobile {
+            width: 180px;
+            height: 75px;
+        }
     }
 }
