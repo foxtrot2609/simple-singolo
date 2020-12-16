@@ -1,18 +1,16 @@
-const headerElem = document.querySelector(".header");
-const headerHeight = headerElem.offsetHeight;
-const headerrTop = headerElem.offsetTop;
+// SCRIPT WORKS CORRECTLY ON DESKTOP IN BROWSER SCALE 100%
 
-const sliderElem = document.querySelector(".slider");
-const sliderHeight = sliderElem.offsetHeight;
-const sliderTop = sliderElem.offsetTop;
+const servicesElem = document.querySelector("#services");
 
-const servicesElem = document.querySelector(".services");
-const servicesHeight = servicesElem.offsetHeight;
 const servicesTop = servicesElem.offsetTop;
+// let servicesBox = servicesElem.getBoundingClientRect();
+// let servicesTop = Math.floor(servicesBox.top);
 
-const portfolioElem = document.querySelector(".portfolio");
-const portfolioHeight = portfolioElem.offsetHeight;
+const portfolioElem = document.querySelector("#portfolio");
+
 const portfolioTop = portfolioElem.offsetTop;
+// let portfolioBox = portfolioElem.getBoundingClientRect();
+// let portfolioTop = Math.floor(portfolioBox.top);
 
 const links = document.querySelectorAll(".navigation > li");
 
@@ -26,14 +24,18 @@ document.addEventListener("scroll", () => {
 
 const onScroll = () => {
     let currentPosition = window.scrollY;
-    console.log(currentPosition);
-  if (currentPosition < sliderHeight) {
+
+    // console.log("services Top: " + servicesTop);
+    // console.log("portfolio Top: " + portfolioTop);
+    // console.log("current position: " + currentPosition);
+
+  if (currentPosition < servicesTop) {
     removeActive();
     links[0].classList.add("active");
-  } else if (currentPosition >= sliderHeight && currentPosition < (portfolioTop - headerHeight)) {
+  } else if (currentPosition >= servicesTop && portfolioTop > currentPosition) {
     removeActive();
     links[1].classList.add("active");
-  } else if (currentPosition >= (portfolioTop - headerHeight)) {
+  } else if (currentPosition >= portfolioTop) {
     removeActive();
     links[2].classList.add("active");
   } else {
