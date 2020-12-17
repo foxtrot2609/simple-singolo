@@ -26,10 +26,15 @@
         align-items: center;
     }
 
-    @include media-tablet {
-        justify-content: center;
+    &>nav {
+        @include media-tablet {
+            flex: 0 1 25px;
+            margin-right: 20px;
+        }
     }
 }
+
+
 
 .navigation {
     display: flex;

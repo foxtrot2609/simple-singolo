@@ -224,6 +224,42 @@ ul {
   cursor: default;
 }
 
+.hamburger-lines, .hamburger::after, .hamburger::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+.hamburger {
+  display: none;
+  position: relative;
+  width: 25px;
+  height: 20px;
+}
+@media (max-width: 767px) {
+  .hamburger {
+    display: inline-block;
+    margin-left: 20px;
+  }
+}
+.hamburger::before {
+  top: 0;
+  left: 0;
+}
+.hamburger::after {
+  bottom: 0;
+  left: 0;
+}
+
+.hamburger-lines {
+  top: 9px;
+  left: 0;
+}
+
 .wrapper {
   max-width: 1020px;
   margin: 0 auto;
@@ -260,8 +296,9 @@ ul {
   }
 }
 @media (max-width: 767px) {
-  .header-wrapper {
-    justify-content: center;
+  .header-wrapper > nav {
+    flex: 0 1 25px;
+    margin-right: 20px;
   }
 }
 
