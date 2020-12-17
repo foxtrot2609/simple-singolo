@@ -65,6 +65,7 @@
     justify-content: space-between;
     width: 300px;
     height: 104px;
+    // flex: 0 1 27%;
     margin: 10px 10px;
 
     @include media-content {
@@ -90,6 +91,7 @@
     box-sizing: border-box;
     border-radius: 50%;
     border: 2px solid $color-font-heading;
+    margin-right: 20px;
 }
 
 .service-text {

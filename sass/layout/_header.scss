@@ -29,12 +29,10 @@
     &>nav {
         @include media-tablet {
             flex: 0 1 25px;
-            margin-right: 20px;
+            padding-right: 20px;
         }
     }
 }
-
-
 
 .navigation {
     display: flex;
@@ -52,7 +50,7 @@
     color: $color-font-header;
     list-style: none;
 
-    &:nth-child(n + 2)::before {
+    &:nth-child(1n + 2)::before {
         content: "\2022";
         display: inline-block;
         vertical-align: top;

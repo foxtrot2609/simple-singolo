@@ -239,11 +239,11 @@ ul {
   position: relative;
   width: 25px;
   height: 20px;
+  margin-left: 20px;
 }
 @media (max-width: 767px) {
   .hamburger {
     display: inline-block;
-    margin-left: 20px;
   }
 }
 .hamburger::before {
@@ -298,7 +298,7 @@ ul {
 @media (max-width: 767px) {
   .header-wrapper > nav {
     flex: 0 1 25px;
-    margin-right: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -323,7 +323,7 @@ ul {
   color: #ffffff;
   list-style: none;
 }
-.navigation-link:nth-child(n+2)::before {
+.navigation-link:nth-child(1n+2)::before {
   content: "•";
   display: inline-block;
   vertical-align: top;
@@ -520,6 +520,7 @@ ul {
   box-sizing: border-box;
   border-radius: 50%;
   border: 2px solid #666d89;
+  margin-right: 20px;
 }
 
 .service-text > h3 {
