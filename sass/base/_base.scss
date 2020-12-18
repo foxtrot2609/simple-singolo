@@ -17,12 +17,14 @@ a {
 }
 
 h1 {
-    margin: 0;
+    margin: 0 auto 0 0;
     padding-left: 40px;
     @include font($size:2.5rem, $weight:700, $height:3rem, $transform:uppercase);
 
     @include media-tablet {
+        margin: 0;
         padding-left: 0;
+        padding-right: 40px;
     }
 
     a {

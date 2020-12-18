@@ -13,7 +13,7 @@ nextButton.addEventListener("mouseover", () => {
   slideLeftToRight();
 });
 
-// Mouseout action on NEXT button
+// Mauseout action on NEXT button
 
 nextButton.addEventListener("mouseout", () => {
   if (currentSlide === 0) {

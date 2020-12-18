@@ -23,7 +23,7 @@ document.addEventListener("scroll", () => {
 });
 
 const onScroll = () => {
-    let currentPosition = window.scrollY;
+    let currentPosition = Math.ceil(window.scrollY);
 
     // console.log("services Top: " + servicesTop);
     // console.log("portfolio Top: " + portfolioTop);

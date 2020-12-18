@@ -17,8 +17,12 @@
     height: 20px;
     margin-left: 20px;
 
+    &:hover {
+        cursor: pointer;
+    }
+
     @include media-tablet {
-        display: inline-block;      
+        display: inline-block;
     }
 
     &::before {
@@ -37,5 +41,5 @@
 .hamburger-lines {
     @extend %hamburger-line;
     top: 9px;
-    left: 0;  
+    left: 0;
 }
