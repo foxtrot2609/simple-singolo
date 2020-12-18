@@ -1,6 +1,10 @@
 // for .header
 .visible-header {
     padding-top: 0;
+
+    &:hover {
+        cursor: default;
+    }
 }
 
 // for .header-wrapper
