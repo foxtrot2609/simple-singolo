@@ -65,11 +65,11 @@
     justify-content: space-between;
     width: 300px;
     height: 104px;
-    // flex: 0 1 27%;
     margin: 10px 10px;
 
     @include media-content {
-        margin-right: 40px;
+        margin-right: 50px;
+        margin-left: 0;
     }
 
     @include media-tablet {
@@ -100,15 +100,24 @@
     }
 
     &>p {
+        display: box;
+        display: -webkit-box;
+        display: -moz-box;
+        box-orient: vertical;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        line-clamp: 3;
+        -webkit-line-clamp: 3;
         width: 220px;
-        height: 75px;
+        height: 70px;
         @include font($size:1.2rem, $weight:400, $height:2.2rem);
         text-align: justify;
+        overflow: hidden;
         text-overflow: ellipsis;
+
 
         @include media-mobile {
             width: 180px;
-            height: 75px;
         }
     }
 }

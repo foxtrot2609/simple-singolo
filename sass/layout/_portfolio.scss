@@ -34,7 +34,7 @@
         @include font($size:1.8rem, $weight:300, $height:3rem);
         text-overflow: ellipsis;
 
-        @include media-content {
+        @include media-tablet {
             padding: 0 30px 10px;
         }
     }

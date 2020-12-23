@@ -74,9 +74,7 @@
         border-color: $collor-border-portfolio-active;
         @extend %transition;
         cursor: pointer;
-    }
-
-    &:visited: 
+    } 
 }
 
 .active-btn {
